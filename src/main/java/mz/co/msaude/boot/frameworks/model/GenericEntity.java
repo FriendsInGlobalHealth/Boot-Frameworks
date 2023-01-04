@@ -38,14 +38,12 @@ public class GenericEntity implements Serializable {
 	private String createdBy;
 
 	@Column(name = "CREATED_AT", nullable = false)
-	@XmlJavaTypeAdapter(LocalDateTimeAdapter.class)
 	private LocalDateTime createdAt;
 
 	@Column(name = "UPDATED_BY", length = 50)
 	private String updatedBy;
 
 	@Column(name = "UPDATED_AT")
-	@XmlJavaTypeAdapter(LocalDateTimeAdapter.class)
 	private LocalDateTime updatedAt;
 
 	@Enumerated(EnumType.STRING)
